@@ -1,1 +1,33 @@
 // Mixins in here
+.centered() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vert-align() {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button-style() {
+    .centered();
+    background:@button-bg;
+    color: @white;
+    border: @navigation-border;
+    width: 15rem;
+    height: 3.3rem;
+    border-radius: 5%;
+    font-family:'Roboto',sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+
+
+}

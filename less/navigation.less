@@ -1,1 +1,30 @@
 // Navigation Styles here
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px dashed gray;
+
+  
+ @media(max-width:500px) {
+   .vert-align();
+ }
+}
+
+nav a {
+    font-family:'Robot', sans-serif;
+    font-size: 1.2rem;
+    color: @shark;
+}
+
+.btn {
+    .button-style();
+
+    &:hover {
+      color: @eastern-blue;
+      background: @white;
+      border:2px solid @shark;
+      cursor: pointer;  
+}
+}
